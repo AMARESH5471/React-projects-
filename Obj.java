@@ -21,5 +21,7 @@ class Obj{
         System.out.println(c2.price);
         System.out.println(c2.color);
         c2.add(4,4);
+        c2.add(5,5);
+        c2.add(6,6);
     }
 }
