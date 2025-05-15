@@ -20,6 +20,14 @@ class Func{
             return 0;
         }
     }
+    public static double divides(int j, int k) {
+        if (k != 0) {
+            return (double) j / k;
+        } else {
+            System.out.println("Error: Division by zero");
+            return 0;
+        }
+    }
     public static void main(String args[]) {
         add();  // Function call for addition
         int res = subtract();  // Function call for subtraction
@@ -27,5 +35,7 @@ class Func{
         multiply(5, 4);  // Function call for multiplication
         double res1 = divide(20, 4);  // Function call for division
         System.out.println("Division (With Param, With Return): " + res1);
+        double res2 = divides(20, 5);  // Function call for division
+        System.out.println("Division (With Param, With Return): " + res2);
     }
 }
